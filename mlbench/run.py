@@ -18,7 +18,12 @@ from eval import eval_metrics
 logging.basicConfig(level=logging.WARN)
 logger = logging.getLogger(__name__)
 
-if __name__ == "__main__":
+root_path = os.path.dirname(os.getcwd()) + '/'
+tracking_uri_path = root_path+'mlruns'
+mlflow.set_tracking_uri('file://'+tracking_uri_path)
+
+# if __name__ == "__main__":
+if 1==1:
 
     # warnings.filterwarnings("ignore")
 
